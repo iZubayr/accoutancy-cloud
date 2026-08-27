@@ -1,7 +1,7 @@
 {
   "scripts": {
     "tailwind": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
-    "serve": "browser-sync start --server ./src --files \"./src/*.html, ./src/output.css\" --no-notify",
+    "serve": "browser-sync start --server --files \"./*.html, ./src/output.css\" --no-notify",
     "dev": "concurrently \"npm run tailwind\" \"npm run serve\"",
     "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --minify"
   },
